@@ -1,23 +1,17 @@
 import {
   Component,
-  computed,
-  signal,
   Input,
-  input,
   Output,
   EventEmitter,
-  output,
 } from '@angular/core';
 // import { DUMMY_USERS } from '../dummy-users';
 
 import { type User } from './user.model';
 
 @Component({
-  selector: 'app-user',
-  standalone: true,
-  imports: [],
-  templateUrl: './user.component.html',
-  styleUrl: './user.component.scss',
+    selector: 'app-user',
+    templateUrl: './user.component.html',
+    styleUrl: './user.component.scss',
 })
 export class UserComponent {
   @Input({ required: true }) user!: User;
